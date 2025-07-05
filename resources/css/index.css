@@ -1,10 +1,11 @@
 * {
   font-family: Helvetica, Arial, sans-serif;
+  --primary-color: rgba(103, 5, 141);
 }
 
 
 h1 {
-  color: SeaGreen;
+  color: var(--primary-color);
 }
 
 
