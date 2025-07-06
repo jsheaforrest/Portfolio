@@ -1,20 +1,63 @@
 * {
   font-family: Helvetica, Arial, sans-serif;
-  --primary-color: rgba(103, 5, 141);
+  --primary-color:#026576;
+  --secondary-color: #4aafaf;
+  --teriary-color: #e1fff7;
+  --text-yellow: #faf4b9;
+  --text-pale-green: #e1fff7;
+  --text-black: black;
 }
 
+body {
+  background-image: url('../../resources/images/darkgreenbg.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
+nav {
+  background-color: var(--secondary-color);
+  padding: 10px;
+  justify-content: flex-end;
+  display: inline-flex;
+  width: fit-content;
+  border-radius: 10px;
+}
+
+nav a{
+  text-decoration: none;
+  color: var(--text-black);
+  font-size: 24px;
+  justify-content: right;
+  padding-right: 10px;
+} 
+
+a:hover{
+  color: white;
+} 
 h1 {
-  color: var(--primary-color);
+  color: var(--text-pale-green);
 }
-
 
 p, 
 li {
   font-size: 18px;
 }
 
-
 a {
   text-decoration: none;
+}
+
+
+#bg-layer {
+  background-image: url('../../resources/images/BottomCorner.png');
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
