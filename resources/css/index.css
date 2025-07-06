@@ -36,28 +36,54 @@ nav a{
 a:hover{
   color: white;
 } 
+
 h1 {
-  color: var(--text-pale-green);
+  color: var(--text-yellow);
+  font-family: "Lucida Handwriting";
+  text-align: center;
+  padding-top: 150px;
+  font-size: 70px;
 }
 
-p, 
-li {
-  font-size: 18px;
+h2 {
+  color: var(--text-yellow);
+  font-family: "Cambria";
+  text-align: center;
+  font-size: 40px;
+}
+
+p {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 30px;
 }
 
 a {
   text-decoration: none;
 }
 
+#about {
+  color: var(--text-yellow);
+}
 
-#bg-layer {
+#bg-bottom, #bg-top {
   background-image: url('../../resources/images/BottomCorner.png');
   position: absolute;
+  min-width: 400px;
+  min-height: 400px;
+  max-width: 1500px;
+  max-height: 1500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#bg-bottom{
   bottom: 0;
   right: 0;
-  width: 50%;
-  height: 100%;
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
+}
+
+#bg-top{
+  transform: scale(-1, -1);
+  top: 0;
+  left: 0;
 }
