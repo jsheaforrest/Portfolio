@@ -33,6 +33,10 @@ nav a{
   padding-right: 10px;
 } 
 
+a {
+  color: aquamarine;
+}
+
 a:hover{
   color: white;
 } 
@@ -41,7 +45,7 @@ h1 {
   color: var(--text-yellow);
   font-family: "Lucida Handwriting";
   text-align: center;
-  padding-top: 150px;
+  padding-top: 80px;
   font-size: 70px;
 }
 
@@ -53,7 +57,7 @@ h2 {
 }
 
 p {
-  padding-top: 20px;
+  padding-top: 10px;
   text-align: center;
   font-size: 30px;
 }
@@ -86,4 +90,32 @@ a {
   transform: scale(-1, -1);
   top: 0;
   left: 0;
+}
+
+#contactme {
+  color: bisque;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#contactlist {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#contactlist p {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 10px;
+}
+
+#contactlist a {
+  font-family: 'Times New Roman', Times, serif;
+}
+#contacttitle {
+  color: #fff;
+}
+
+#contacttitle p {
+  font-size: 60px;
+  font-family: 'Times New Roman', Times, serif;
 }
