@@ -75,7 +75,7 @@ h1 {
   color: var(--text-yellow);
   font-family: "Lucida Handwriting";
   text-align: center;
-  padding-top: 80px;
+  padding-top: 60px;
   font-size: 70px;
 }
 
@@ -84,6 +84,13 @@ h2 {
   font-family: "Cambria";
   text-align: center;
   font-size: 40px;
+}
+
+h3 {
+  color: var(--text-yellow);
+  font-family: "Cambria";
+  text-align: center;
+  font-size: 24px;
 }
 
 p {
@@ -151,15 +158,44 @@ a {
 }
 
 #center-container {
+  position: relative;          /* anchor for the absolute line */
   display: flex;
-  justify-content: center;
+  flex-direction: column;      /* stack header, subheads, then line layer */
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;           /* fill the viewport */
+  z-index: 1;
 }
 
 #centerline {
+ position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);  /* center both axes */
   width: 6px;
-  height: 75vh; /* 75% of the viewport height */
+  height: 75vh;
   background-color: var(--text-yellow);
-  border-radius: 3px; /* Rounded ends */
+  border-radius: 3px;
+  z-index: 1;  
+
+.subheadings {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2; 
 }
+
+.subheading {
+  flex: 1;
+  text-align: center;
+  color: var(--text-yellow);
+  font-size: 32px;
+  padding: 0 10px;
+}
+
+
+/* keep some breathing room from the center line */
+#leftsubhead  { padding-right: 50px; }
+#rightsubhead { padding-left:  50px; }
