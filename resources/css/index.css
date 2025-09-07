@@ -17,12 +17,33 @@ body {
 }
 
 nav {
-  background-color: var(--secondary-color);
   padding: 10px;
   justify-content: flex-end;
   display: inline-flex;
   width: fit-content;
-  border-radius: 10px;
+  gap: 10px;
+}
+
+.nav-btn {
+ --btn: var(--secondary-color);
+  --btn-dark: color-mix(in srgb, var(--primary-color) 0%, black);
+  --btn-light: color-mix(in srgb, var(--secondary-color) 50%, var(--text-yellow));
+  --edge: color-mix(in srgb, var(--primary-color) 80%, black);
+  --text: var(--text-yellow);
+  
+  padding: 10px 20px;
+  background: linear-gradient(to bottom, var(--btn-light), var(--btn));
+  border: 4px solid var(--edge);
+  color: black;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background 0.3s;
+
+  box-shadow:
+  0 6px 14px rgba(0,0,0,.28),   /* drop shadow */
+  0 2px 0 rgba(255,255,255,.25) inset,  /* top lip highlight */
+  0 -2px 0 rgba(0,0,0,.15) inset;       /* bottom inner shade */
 }
 
 nav a{
@@ -33,12 +54,20 @@ nav a{
   padding-right: 10px;
 } 
 
+.nav-btn:active {
+  transform: translateY(2px);
+  box-shadow:
+    0 3px 8px rgba(0,0,0,.35),
+    0 1px 0 rgba(255,255,255,.18) inset,
+    0 -2px 0 rgba(0,0,0,.25) inset;
+}
+
 a {
   color: aquamarine;
 }
 
 a:hover{
-  color: white;
+  color: var(--text-yellow);
 } 
 
 h1 {
@@ -119,3 +148,4 @@ a {
   font-size: 60px;
   font-family: 'Times New Roman', Times, serif;
 }
+
