@@ -2,9 +2,11 @@
 <html>
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Willow Forrest: Projects</title>
     <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
 </head>
+
 <body> 
     <div id="bg-bottom"></div>
     <div id="bg-top"></div>
@@ -14,26 +16,62 @@
             <a href="projects.html" class="nav-btn">Projects</a>
             <a href="contact.html" class="nav-btn">Contact</a>
         </nav>
-    </div>
-    <div id="projectheader">
-        <h1>Projects</h>
-    </div>
 
-    <div class="subheadings">
-        <div class="subheading" id="leftsubhead">
-            <h3>Apps</h3>
-        </div>
+    <div id="bg-top" aria-hidden="true"></div>
+    <div id="bg-bottom" aria-hidden="true"></div>
 
-        <div class="subheading" id="rightsubhead">
-            <h3>Websites</h3>
-        </div>
-    <div>
+    <div class="projectspage">
+        <header class="page-header">
+        <h1>Projects</h1>
+        <p>Two collections: UI/UX app designs and websites. Tap any card to view details.</p>
+    </header>
 
-    <div id="center-container">
-        <div id="centerline">
-        </div>
-    </div>
+    <main class="projects">
+      <section class="project-navigation" aria-label="Project Navigation">
+        <!-- Left: App designs -->
+        <section class="nav-section" aria-labelledby="apps-title">
+          <h2 id="apps-title">App Designs</h2>
 
+          <div class="project-nav-items">
+            <div class="nav-item">
+              <h3><a href="beyond-travel-app.html">Beyond: Travel Booking App</a></h3>
+              <p>Complete UI/UX design for a travel booking application featuring search and checkout pages with modern, user-friendly interface design.</p>
+            </div>
 
+            <div class="nav-item">
+              <h3><a href="meal-planner-app.html">Meal Planner – Recipe Card</a></h3>
+              <p>Modular card pattern design with accessibility features and responsive behaviors for seamless user experience across devices.</p>
+            </div>
+
+            <div class="nav-item">
+              <h3><a href="budget-app.html">Budget App – Insights</a></h3>
+              <p>Data-dense UI design using semantic color coding and progressive disclosure techniques for intuitive financial data visualization.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="nav-section" aria-labelledby="web-title">
+          <h2 id="web-title">Websites</h2>
+
+          <div class="project-nav-items">
+            <div class="nav-item">
+              <h3><a href="nonprofit-landing.html">Nonprofit Landing Page</a></h3>
+              <p>Clean, trustworthy design featuring hero section, impact statistics, and donation call-to-action optimized for conversion and readability.</p>
+            </div>
+
+            <div class="nav-item">
+              <h3><a href="portfolio-v2.html">Portfolio v2</a></h3>
+              <p>Modern portfolio showcase with interactive gallery, filtering capabilities, and cohesive brand palette for professional presentation.</p>
+            </div>
+
+            <div class="nav-item">
+              <h3><a href="book-cover-showcase.html">Book Cover Showcase</a></h3>
+              <p>Image-forward layout design specifically optimized for mobile viewing and touch interactions, highlighting visual design work.</p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
