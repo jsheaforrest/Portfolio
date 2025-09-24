@@ -3,7 +3,7 @@
   --primary-color:#026576;
   --secondary-color: #4aafaf;
   --teriary-color: #e1fff7;
-  --text-yellow: #faf4b9;
+  --text-yellow: #f8f5da;
   --text-pale-green: #e1fff7;
   --text-black: black;
 }
@@ -186,13 +186,15 @@ body { color: var(--ink); }
 
 /* Header (sticky to keep context while scrolling) - reduced opacity for light fonts */
 header.page-header{
-  padding: 24px clamp(16px, 5vw, 48px);
+  padding: 12px clamp(16px, 5vw, 48px) 36px;
   border-bottom: 1px solid rgba(0,0,0,.08);
-  background: rgba(255,255,255,.35);
+  background: linear-gradient(to bottom, rgba(255,255,255,.90), rgba(255,255,255,.5));
   backdrop-filter: blur(4px);
   position: sticky; top: 0; z-index: 5;
+  border-radius: 80px;
+
 }
-.page-header h1{ margin: 0 0 6px 0; font-size: clamp(22px, 2.4vw, 32px);}
+.page-header h1{ margin: 0 0 0px 0; font-size: clamp(50px, 2.4vw, 70px); color: #0b1a1a;}
 .page-header p{ margin: 0; color: rgba(0,0,0,1);}
 
 main.projects{ padding: 24px clamp(16px, 5vw, 48px) 64px; }
@@ -237,11 +239,13 @@ main.projects{ padding: 24px clamp(16px, 5vw, 48px) 64px; }
   position: sticky;
   top: calc(56px + 8px); /* below sticky page header */
   margin: 0 0 4px 0;
-  padding: 8px 0;
+  padding: 12px 16px;  /* Increase padding */
+  border: 1px solid rgba(0,0,0,.08);  /* Use full border instead */
+  border-radius: 10px;
   font-size: clamp(18px, 1.8vw, 22px);
-  background: linear-gradient(to bottom, rgba(255,255,255,.45), rgba(255,255,255,.25));
+  background: linear-gradient(to bottom, rgba(255,255,255,.90), rgba(255,255,255,.5));
   backdrop-filter: blur(2px);
-  border-bottom: 1px solid rgba(0,0,0,.08);
+  color: #0b1a1a;
 }
 
 /* cards row via flexbox */
@@ -306,6 +310,7 @@ main.projects{ padding: 24px clamp(16px, 5vw, 48px) 64px; }
   align-items: flex-start;
   position: relative;
   isolation: isolate;
+  border-radius: 20;
 }
 
 .project-navigation::after{
